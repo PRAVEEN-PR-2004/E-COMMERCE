@@ -1,0 +1,63 @@
+.shopTitle {
+  margin-top: 20px; /* Adjusted for smaller screens */
+  text-align: center;
+  font-size: 40px;
+}
+
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* By default, one column for smaller screens */
+  gap: 20px; /* Added gap between products */
+}
+
+.product {
+  border-radius: 15px;
+  width: 100%; /* Full width for smaller screens */
+  max-width: 300px; /* Limited width for larger screens */
+  margin: 20px auto; /* Center-align and adjust margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 100%; /* Image takes full width of its container */
+  max-width: 100%; /* Added for responsiveness */
+}
+
+.product .description {
+  text-align: center;
+  padding: 10px; /* Added padding for better readability */
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding: 8px 12px; /* Adjusted padding for better button size */
+  border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .products {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns for larger screens */
+  }
+}
+
+
+
