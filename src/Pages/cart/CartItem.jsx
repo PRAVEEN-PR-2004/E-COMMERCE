@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../../context/Shop_context';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import './Cartitems.css'
 
 export const CartItem = ({ data }) => { // Destructure data directly in function argument
     const { id, productName, price, productImage } = data;
@@ -24,8 +25,8 @@ export const CartItem = ({ data }) => { // Destructure data directly in function
                     <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
                     <button onClick={() => addToCart(id)}>+</button>
                 </div>
+            <button className='button-27' onClick={handleBuy}>Buy</button> {/* Call handleBuy on button click */}
             </div>
-            <button onClick={handleBuy}>Buy</button> {/* Call handleBuy on button click */}
         </div>
     );
 };
