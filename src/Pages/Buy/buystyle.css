@@ -1,4 +1,4 @@
-/* BuyProduct.css */
+/* buystyle.css */
 
 .product-details {
   display: flex;
@@ -12,11 +12,13 @@
   flex: 1;
   max-width: 400px;
   margin-right: 20px;
+  text-align: center; /* Center the content horizontally */
 }
 
 .product-image img {
-  width: 100%;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
   height: auto;
+  display: inline-block; /* Ensure inline-block so text-align works */
   transition: transform 0.3s ease-in-out; /* Add transition effect */
 }
 
@@ -60,7 +62,7 @@
 @media screen and (max-width: 768px) {
   .product-details {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center; /* Center items on small screens */
   }
 
   .product-image,
@@ -69,7 +71,12 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
+
+  .product-image img {
+    margin: 0 auto; /* Center the image horizontally on small devices */
+  }
 }
+
 .popup {
   position: fixed;
   top: 0;
@@ -100,4 +107,3 @@
 .close:hover {
   color: #000;
 }
-

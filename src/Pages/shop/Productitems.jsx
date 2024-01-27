@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../../context/Shop_context';
-
+import './Product.css';
 export const Productitems = (props) => {
   const { id, productName, price, productImage } = props.data;
   const { addToCart, cartItems } = useContext(ShopContext);
@@ -15,10 +15,10 @@ export const Productitems = (props) => {
 
   return (
     <div className='product'>
-      <img src={productImage} alt={productName} />
+      <img src={productImage} alt={productName} className="product-image" />
       <div className='description'>
         <p><b>{productName}</b></p>
-        <p>${price}</p>
+        <p className='price'>{price}.RS</p>
       </div>
       <button className='addToCartBttn' onClick={handleAddToCart}>
         Add to Cart {cartItemsAmount > 0 && <> {cartItemsAmount}</>}

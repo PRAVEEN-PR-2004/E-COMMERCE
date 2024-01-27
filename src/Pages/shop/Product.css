@@ -1,0 +1,15 @@
+.product-image {
+    width: 200px;
+    height: 200px;
+  }
+  .price{
+    background: linear-gradient(45deg, #2f2e2b, #e3d5cc); /* Gradient background */
+    color: #fff; /* Text color */
+    padding: 5px 10px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  .price:hover{
+    background-color: #000000;
+  }
