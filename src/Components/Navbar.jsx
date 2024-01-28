@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className='links'>
-            <Link to="/">shop</Link>
+            <Link className='shop' to="/">SHOP</Link>
             <Link to="/Cart">
             <ShoppingCart size={32} color={"white"}/>
             </Link>

@@ -88,7 +88,7 @@
 }
 
 .popup-content {
-  background-color: #494049;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
   position: relative; /* Make the container position relative */
@@ -100,12 +100,16 @@
   right: 5px;
   cursor: pointer;
   font-size: 24px;
-  color: #aaa;
+  color: #695959;
 }
 
 .delivery {
-  color: #EBEAEF;
+  color: black;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Example shadow effect */
+  font-size: larger;
+  font-weight: 500;
 }
+
 
 .close:hover {
   color: #000;
