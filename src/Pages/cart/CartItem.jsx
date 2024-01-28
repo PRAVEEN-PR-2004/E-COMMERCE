@@ -20,11 +20,11 @@ export const CartItem = ({ data }) => { // Destructure data directly in function
                     <b>{productName}</b>
                 </p>
                 <p><b>{price}</b></p>
-                
+                <div className='countHandler'>
                     <button className='remove' onClick={() => removeToCart(id)}>REMOVE</button>
                   
                     
-      
+                </div>
             <button className='tobuy' onClick={handleBuy}>Buy</button> {/* Call handleBuy on button click */}
             </div>
         </div>
