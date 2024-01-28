@@ -28,3 +28,20 @@
   color: white;
   cursor: pointer;
 }
+/* Add media query for small devices */
+@media only screen and (max-width: 600px) {
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .tobuy,
+  .remove {
+    margin: 5px 0; /* Adjust margin for better spacing */
+    width: 50%; /* Make buttons take full width */
+  }
+}
