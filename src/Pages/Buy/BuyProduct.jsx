@@ -40,10 +40,7 @@ const BuyProduct = () => {
         <h2>{product.productName}</h2>
         <p className="product-price">${product.price}</p>
         <p className="product-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed condimentum ipsum vitae urna faucibus, nec commodo ligula efficitur. 
-          Nullam porta, ligula id vestibulum accumsan, mauris ligula eleifend dolor, 
-          et commodo turpis nulla id orci. Sed rutrum justo nec ultricies aliquet.
+         {product.description}
         </p>
         <button className="buy-button" onClick={handleOrderButtonClick}>PLACE YOUR ORDER</button>
       </div>
