@@ -50,9 +50,9 @@ const BuyProduct = () => {
         <div className="popup">
           <div className="popup-content">
             <span className="close" onClick={handleClosePopup}>&times;</span>
-            <p>Your order has been placed successfully!</p>
+            <p className='delivery'>Your order has been placed successfully!</p>
             {deliveryDate && (
-              <p>Expected Delivery Date: {deliveryDate.toLocaleDateString()}</p>
+              <p className='delivery'>Expected Delivery Date: {deliveryDate.toLocaleDateString()}</p>
             )}
           </div>
         </div>
