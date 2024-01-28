@@ -1,5 +1,3 @@
-/* buystyle.css */
-
 .product-details {
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +91,7 @@
   background-color: #494049;
   padding: 20px;
   border-radius: 5px;
+  position: relative; /* Make the container position relative */
 }
 
 .close {
@@ -103,17 +102,11 @@
   font-size: 24px;
   color: #aaa;
 }
+
 .delivery {
   color: #EBEAEF;
 }
 
 .close:hover {
   color: #000;
-}
-/* buystyle.css */
-
-/* buystyle.css */
-
-.popup-content {
-  position: relative; /* Make the container position relative */
 }

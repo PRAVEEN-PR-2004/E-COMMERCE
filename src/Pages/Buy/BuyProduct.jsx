@@ -40,7 +40,7 @@ const BuyProduct = () => {
         <h2>{product.productName}</h2>
         <p className="product-price">${product.price}</p>
         <p className="product-description">
-         {product.description}
+          {product.description}
         </p>
         <button className="buy-button" onClick={handleOrderButtonClick}>PLACE YOUR ORDER</button>
       </div>
