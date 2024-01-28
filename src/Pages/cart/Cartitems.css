@@ -28,7 +28,8 @@
   color: white;
   cursor: pointer;
 }
-/* Add media query for small devices */
+
+
 @media only screen and (max-width: 600px) {
   .cartItem {
     display: flex;
@@ -38,6 +39,11 @@
   .description {
     margin-top: 5px;
     text-align: center;
+  }
+  .productName,
+  .price {
+    font-size: 14px; /* Decrease font size */
+    margin-bottom: 3px; /* Reduce space between product name and price */
   }
   .tobuy,
   .remove {
