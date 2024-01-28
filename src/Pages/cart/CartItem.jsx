@@ -5,7 +5,7 @@ import './Cartitems.css'
 
 export const CartItem = ({ data }) => { // Destructure data directly in function argument
     const { id, productName, price, productImage } = data;
-    const { cartItems, addToCart, removeToCart, updateCartItemCount } = useContext(ShopContext);
+    const {removeToCart } = useContext(ShopContext);
     const navigate = useNavigate(); // Get the navigate function
 
     const handleBuy = () => {
@@ -20,12 +20,12 @@ export const CartItem = ({ data }) => { // Destructure data directly in function
                     <b>{productName}</b>
                 </p>
                 <p><b>{price}</b></p>
-                <div className='countHandler'>
-                    <button onClick={() => removeToCart(id)}>-</button>
-                    <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
-                    <button onClick={() => addToCart(id)}>+</button>
-                </div>
-            <button className='button-27' onClick={handleBuy}>Buy</button> {/* Call handleBuy on button click */}
+                
+                    <button className='remove' onClick={() => removeToCart(id)}>REMOVE</button>
+                  
+                    
+      
+            <button className='tobuy' onClick={handleBuy}>Buy</button> {/* Call handleBuy on button click */}
             </div>
         </div>
     );
