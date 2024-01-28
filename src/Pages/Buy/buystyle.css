@@ -89,9 +89,11 @@
 
 .popup-content {
   background-color: #494049;
-  padding: 20px;
+  padding: 10px; /* Reduce padding for smaller size */
   border-radius: 5px;
   position: relative; /* Make the container position relative */
+  width: 80%; /* Set width to 80% of the screen width */
+  max-width: 300px; /* Limit maximum width for smaller devices */
 }
 
 .close {
