@@ -1,5 +1,5 @@
 .shopTitle {
-  margin-top: 20px; /* Adjusted for smaller screens */
+  margin-top: 5.5rem; /* Adjusted for smaller screens */
   text-align: center;
   font-size: 40px;
   /* Advanced styling */
@@ -12,7 +12,6 @@
     font-size: 20px; /* Decrease font size for smaller screens */
   }
 }
-
 
 .products {
   width: 100%;
@@ -68,6 +67,3 @@
     grid-template-columns: 1fr 1fr 1fr; /* Three columns for larger screens */
   }
 }
-
-
-
