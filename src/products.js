@@ -21,14 +21,14 @@ export const PRODUCTS =
     {
         id: 2,
         productName: "SUNFLOWER OIL",
-        price:"900",
+        price:"130",
         productImage:product2,
         description:"Experience the golden goodness of sunflower oil, a kitchen essential loved for its versatility and health benefits. Made from high-quality sunflower seeds, this oil is perfect for all your cooking needs.",
     },
     {
         id: 3,
         productName: "INDIAN GATE",
-        price:"300",
+        price:"200",
         productImage:product3,
         description:"Premium quality, distinct aroma, and fluffy texture. Perfect for biryanis, pilafs, and more. Trusted by cooks worldwide.Experience the authentic taste of India with every grain of India Gate Basmati Rice.",
     },
@@ -42,14 +42,14 @@ export const PRODUCTS =
     {
         id: 5,
         productName: "TATA SALT",
-        price:"200",
+        price:"70",
         productImage:product5,
         description:"Tata Salt is a leading brand of table salt known for its purity and quality. Made from natural sea salt and fortified with iodine, Tata Salt ensures essential iodine intake for maintaining thyroid health. ",
     },
     {
         id: 6,
         productName: "GULAB JAMUN",
-        price:"10",
+        price:"65",
         productImage:product6,
         description:"With its perfect blend of flour, sugar, and aromatic spices, MTR Gulab Jamun mix allows you to create soft and spongy dumplings soaked in a fragrant sugar syrup with ease. Whether enjoyed warm or chilled, MTR Gulab Jamun offers a delightful indulgence that captures the essence of traditional Indian sweets.",
     },
