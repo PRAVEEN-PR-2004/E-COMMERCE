@@ -25,3 +25,12 @@
   font-weight: 700;
   font-family: sans-serif;
 }
+
+@media (max-width: 600px) {
+  .links a {
+    font-size: 20px;
+  }
+  .links {
+    margin-right: 1rem;
+  }
+}
