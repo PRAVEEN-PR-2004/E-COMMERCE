@@ -10,7 +10,7 @@ const Shop = () => {
     <div className='shop'>
         <div className='shopTitle'>
             <h1>RAJU SHOP</h1>
-            <h1>Welcome, {username}</h1>
+            <h5>Welcome, {username}</h5>
 
 
         </div>
