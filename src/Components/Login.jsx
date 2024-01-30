@@ -1,23 +1,26 @@
 // Login.js
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 import './Loginstyle.css'; // Import CSS file for styling
+import { ShopContext } from '../context/Shop_context';
 
 const Login = () => {
   const navigate = useNavigate(); // Initialize the navigate function
-  const [username, setUsername] = useState('');
+  const {setUsername} = useContext(ShopContext);
+  const [customername, setCustomername] = useState('');
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
 
   const handleLogin = () => {
     // Check if any field is empty
-    if (!username || !address || !phone) {
+    if (!customername || !address || !phone) {
       alert('Please fill in all fields');
       return;
     }
 
     // Navigate to the home component after successful login
+    setUsername(customername);
     navigate('/');
   };
 
@@ -25,11 +28,11 @@ const Login = () => {
     <div className="login-container">
       <h2>Login</h2>
       <div className="input-container">
-        <label>Username:</label>
+        <label>customername:</label>
         <input
           type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={customername}
+          onChange={(e) => setCustomername(e.target.value)}
         />
       </div>
       <div className="input-container">

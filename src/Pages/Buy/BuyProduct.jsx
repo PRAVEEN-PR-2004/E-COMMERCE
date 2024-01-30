@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { PRODUCTS } from "../../products";
 import './buystyle.css'; // Import your CSS file
+import { ShopContext } from '../../context/Shop_context';
 
 const BuyProduct = () => {
   const { id } = useParams();
   const [showPopup, setShowPopup] = useState(false);
   const [deliveryDate, setDeliveryDate] = useState(null);
+  const { username } = useContext(ShopContext);
 
   // Find the product by ID
   const product = PRODUCTS.find(product => product.id === parseInt(id));
@@ -16,14 +18,20 @@ const BuyProduct = () => {
   }
 
   const handleOrderButtonClick = () => {
-    // Calculate delivery date (current date + 4 days)
-    const currentDate = new Date();
-    const deliveryDate = new Date(currentDate);
-    deliveryDate.setDate(deliveryDate.getDate() + 4);
-    setDeliveryDate(deliveryDate);
-
-    // Show the pop-up when the button is clicked
-    setShowPopup(true);
+    // If the username is empty, proceed with the order
+    if (username === '') {
+      
+      window.alert("Please log in to place your order");
+    } else {
+      // If the username is not empty, show an alert
+      const currentDate = new Date();
+      const deliveryDate = new Date(currentDate);
+      deliveryDate.setDate(deliveryDate.getDate() + 4);
+      setDeliveryDate(deliveryDate);
+  
+      // Show the pop-up when the button is clicked
+      setShowPopup(true);
+    }
   };
 
   const handleClosePopup = () => {
