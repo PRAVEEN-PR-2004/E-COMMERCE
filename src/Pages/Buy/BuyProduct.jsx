@@ -21,8 +21,9 @@ const BuyProduct = () => {
     // If the username is empty, proceed with the order
     if (username === '') {
       
-      window.alert("Please log in to place your order");
-    } else {
+      window.alert("Please log in to place your order!");
+    } 
+    else {
       // If the username is not empty, show an alert
       const currentDate = new Date();
       const deliveryDate = new Date(currentDate);
