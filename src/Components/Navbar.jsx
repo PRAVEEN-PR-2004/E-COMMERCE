@@ -10,9 +10,13 @@ const Navbar = () => {
         <Link className="shop" to="/">
           HOME
         </Link>
+        <Link className="shop" to="/login">
+          LOGIN
+        </Link>
         <Link to="/Cart">
           <ShoppingCart size={32} color={"white"} />
         </Link>
+        
       </div>
     </div>
   );
