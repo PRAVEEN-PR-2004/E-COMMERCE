@@ -46,7 +46,7 @@ const BuyProduct = () => {
       </div>
       <div className="product-info">
         <h2>{product.productName}</h2>
-        <p className="product-price">${product.price}</p>
+        <p className="product-price">{product.price}.RS</p>
         <p className="product-description">
           {product.description}
         </p>
