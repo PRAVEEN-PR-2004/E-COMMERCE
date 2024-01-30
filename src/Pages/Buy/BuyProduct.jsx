@@ -19,7 +19,7 @@ const BuyProduct = () => {
 
   const handleOrderButtonClick = () => {
     // If the username is empty, proceed with the order
-    if (username === '') {
+    if (username === 'you') {
       
       window.alert("Please log in to place your order!");
     } 
