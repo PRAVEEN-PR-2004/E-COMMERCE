@@ -7,6 +7,7 @@ import { ShopContextProvider } from './context/Shop_context';
 import BuyProduct from './Pages/Buy/BuyProduct';
 import Login from './Components/Login'
 
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
             <Route path='/buy/:id' element={<BuyProduct />} />
             <Route path='/login' element={<Login/>}/>
           </Routes>
+          
         </Router>
       </ShopContextProvider>
     </div>
